@@ -1,0 +1,29 @@
+{
+  "name": "redux-saga-beginner-tutorial",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "babel-node sagas.spec.js | tap-spec",
+    "start": "budo main.js:build.js --dir ./ --verbose  --live -- -t babelify"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "8",
+    "browserify": "^16.5.0",
+    "budo": "^11.6.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}
